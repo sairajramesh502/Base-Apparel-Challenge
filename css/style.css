@@ -1,0 +1,206 @@
+body{
+    margin:0;
+    padding: 0;
+    background: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+}
+
+/*-------------------------Main Container-------------------------------------*/
+
+.main{
+    background: url("../images/bg-pattern-desktop.svg");
+    height: 100vh;
+    width: 100%;
+    background-size: 63%;
+    position: relative;
+    background-repeat: no-repeat;
+    
+}
+
+.logoMain{
+    margin: 50px auto auto 10%;
+}
+.hero{
+    background: url("../images/hero-desktop.jpg") no-repeat;
+    width: 40%;
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    background-position:center;
+
+}
+
+.say1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+.say2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem;
+    color: hsl(0, 6%, 24%);
+    letter-spacing: 17px;
+    width:40%;
+    margin-left: 10%;
+}
+p{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.say3{
+    width: 32%;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 20px auto auto 10%;
+    color:hsl(0, 36%, 70%);
+}
+.input{
+    position: relative;
+    width: 32%;
+    margin: 0 0 0 10%;
+    padding: 2% 0 2% 0;
+}
+.email{
+    border: 1px solid hsl(0, 36%, 70%);
+    width: 80%;
+    height: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 50px;
+    color: hsl(0, 36%, 70%);
+    padding: 0 0 0 30px;
+    background-color: hsl(0, 100%, 98%);
+}
+
+.email:focus{
+    outline: none;
+}
+.btn1{
+    background: linear-gradient(135deg,hsl(0, 36%, 70%),hsl(0, 93%, 68%)); 
+    text-align: center;
+    width: 85px;
+    height: 41px;
+    border-radius: 25px;
+    position: absolute;
+    left: 68%;
+}
+
+.iconarrow{
+    margin: 10px;
+}
+
+
+/*---------------------------------------screen size after 1000 px---------------------------------------*/
+@media screen and (max-width :950px){
+    body{
+        margin:0;
+        padding: 0;
+        background: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    }
+    .main{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    }
+    .logoMain{
+        width: 12%;
+    }
+    .say1{
+        font-size: 3rem;
+    }
+    .say2{
+        font-size: 3rem;
+    }
+    .say3{
+        font-size: .7rem;
+    }
+
+}
+
+/*-------------------------------------- Screen Size 750 px-----------------------------------------------*/
+
+@media screen and (max-width : 600px){
+    body{
+        margin:0;
+        padding: 0;
+        background: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    }
+    .main{
+        height: 100%;
+        background: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%))
+    }
+    .logoMain{
+        width: 100px;
+        margin: 20px 0 0 6%;
+    }
+
+    .hero{
+        display: block;
+        width: 100%;
+        height: 50%;
+        background:url("../images/hero-mobile.jpg") no-repeat;
+        background-size: cover;
+        background-position:top;
+        margin: 50px 0 0 0;
+    }
+    .say1{
+        font-size: 2rem;
+    }
+    .say2{
+        margin: 427px auto 0 auto ;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .say3{
+        text-align: center;
+        width: 50%;
+        margin: 50px auto 50px auto;
+    }
+    .input{
+        position: relative;
+        width: 50%;
+        margin: 15px auto 15px auto;
+        padding: 2% 0 2% 0;
+        text-align: center;
+    }
+    .btn1{
+        position: absolute;
+        margin: 4.4% auto auto 18.5%;
+        top: 0;
+        border-radius: 50px;
+        height: 40px;
+        width: 40px;
+        padding: 20px auto 20px auto;
+    }
+    .iconarrow{
+        height: 10px;
+        width: 10px;
+        margin: 15px auto 15px auto;
+    }
+    .email{
+        width: 100%;
+        padding: 0;
+    }
+    .email::placeholder{
+        color: hsl(0, 51%, 73%);
+        padding-left: 30px;
+    }
+
+}
+
+/*-------------------------------------- Screen Size 360 px-----------------------------------------------*/
+@media screen and (max-width : 360px){
+    .main{
+        height: 100vh;
+        background: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%))
+    }
+    .hero{
+        height: 30%;
+    }
+    .say2{
+        margin: 245px auto 0 auto;
+        width: 100%;
+    }
+}
